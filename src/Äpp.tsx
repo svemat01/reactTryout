@@ -1,5 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { Buttön } from './components/Button';
+import { Löc } from './components/Luc';
+import { Töggle } from './components/Toggle';
+
 const GlobalStyle = createGlobalStyle`
     html, body {
         width: 100vw;
@@ -20,16 +24,21 @@ const Wrapper = styled.div`
     background: #2d2e2f;
     color: white;
     height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `;
 
-export const App = () => {
-
+export const Äpp = () => {
     return (
         <Wrapper>
             <GlobalStyle />
-            <div>
-                Hello World
-            </div>
+            Hello World
+            <Buttön label="Click me" />
+            <Töggle />
+            <Löc />
         </Wrapper>
-    )
+    );
 };
