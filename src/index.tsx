@@ -1,5 +1,5 @@
 import { render } from 'react-dom';
 
-import { Äpp } from './App';
+import { App } from './App';
 
-render(<Äpp />, document.querySelector('#root'));
+render(<App />, document.querySelector('#root'));

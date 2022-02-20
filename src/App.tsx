@@ -1,44 +1,73 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 
-import { Buttön } from './components/Button';
-import { Löc } from './components/Luc';
-import { Töggle } from './components/Toggle';
+import { Home } from './routes/home';
+import { TypingApp } from './routes/type';
+
+// https://reactrouter.com/docs/en/v6/getting-started/tutorial
 
 const GlobalStyle = createGlobalStyle`
-    html, body {
-        width: 100vw;
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-        font-family: monospace, sans-serif;
-    }
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
+
     :root {
-        font-size: 16px;
+        font-size: 62.5%;
+    }
+
+    html, body {
+        /* width: 100vw;
+        height: 100vh; */
+
+        padding: 0;
+        margin: 0;
+
+        font-family: 'Roboto', monospace, sans-serif;
+
+        height: 100vh;
+
+        background: #2A2D34
+    }
+
+    #root {
+        height: 100%;
+    }
+    
+
+    a {
+        text-decoration: none;
     }
 `;
 
-const Wrapper = styled.div`
-    background: #2d2e2f;
-    color: white;
-    height: 100vh;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-`;
+// export const Äpp = () => {
+//     return (
+//         <Wrapper>
+//             <GlobalStyle />
+//             <BrowserRouter>
+//                 <Routes>
+//                     <Route path="/" element={<></>} />
+//                     <Route path="type" element={<TypingApp />} />
+//                 </Routes>
+//             </BrowserRouter>
+//             {/* <Buttön label="Click me" />
+//             <Töggle />
+//             <Löc /> */}
+//         </Wrapper>
+//     );
+// };
 
-export const Äpp = () => {
+export const App = () => {
     return (
-        <Wrapper>
+        <>
             <GlobalStyle />
-            Hello World
-            <Buttön label="Click me" />
-            <Töggle />
-            <Löc />
-        </Wrapper>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="type" element={<TypingApp />} />
+                </Routes>
+            </BrowserRouter>
+        </>
     );
 };

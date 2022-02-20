@@ -47,7 +47,7 @@ export const Löc: FC = () => {
             }
         >
             <img
-                src="https://media.discordapp.net/attachments/855172048217440277/944142373359849483/unknown.png?width=1221&height=685"
+                src="https://i.imgur.com/g3vvOg9.png"
                 alt={WerenostrangerstoloveYouknowtherulesandsodoIAfullcommitmentswhatImthinkingofYouwouldntgetthisfromanyotherguyIjustwannatellyouhowImfeelingGottamakeyouunderstandNevergonnagiveyouupNevergonnaletyoudownNevergonnarunaroundanddesertyouNevergonnamakeyoucryNevergonnasaygoodbyeNevergonnatellalieandhurtyou.toString()}
                 onClick={() => {
                     SetWerenostrangerstoloveYouknowtherulesandsodoIAfullcommitmentswhatImthinkingofYouwouldntgetthisfromanyotherguyIjustwannatellyouhowImfeelingGottamakeyouunderstandNevergonnagiveyouupNevergonnaletyoudownNevergonnarunaroundanddesertyouNevergonnamakeyoucryNevergonnasaygoodbyeNevergonnatellalieandhurtyou(
